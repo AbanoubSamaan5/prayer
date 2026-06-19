@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>🙏 Daily Prayer Wheel</title>
+
+    <meta name="description" content="Daily Prayer Wheel - Pray for one another." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-card">
+
+
+
+                <h1>
+                    🙏 Daily Prayer Wheel
+
+                </h1>
+
+                <p class="subtitle">
+                    Together in prayer, united in faith ❤️
+                </p>
+
+                <div class="counter-card">
+                    Prayer opportunities remaining today:
+                    <span id="remainingSpins">2</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- WHEEL -->
+
+        <section id="wheelSection" class="wheel-section">
+
+            <div class="wheel-container">
+
+                <div class="pointer"></div>
+
+                <canvas id="wheelCanvas" width="700" height="700"></canvas>
+
+            </div>
+
+            <button id="spinBtn" class="spin-btn">
+                🎡 Choose Someone to Pray For
+            </button>
+
+        </section>
+
+        <!-- LIMIT REACHED -->
+
+        <section id="lockedSection" class="locked-card hidden">
+
+           <!-- LIMIT REACHED -->
+
+<h2>
+    🙏 Today's Prayer Friends Have Been Chosen
+</h2>
+
+<p>
+    Our prayer focus for today is ready.
+    Let's keep these dear friends in our hearts and prayers. ❤️
+</p>
+
+        </section>
+
+        <!-- WINNERS -->
+
+        <section class="winners-section">
+
+            <div class="section-title">
+                ❤️ Friends We're Praying For Today
+            </div>
+            <div class="date-card">
+                
+                <span id="currentDate"></span>
+            </div>
+
+            <div id="winnerList" class="winner-grid"></div>
+
+        </section>
+
+        <!-- ADMIN -->
+
+        <!-- <section class="admin-panel">
+
+            <div class="admin-header">
+
+                ⚙️ Admin & Test Panel
+
+            </div>
+
+            <div class="admin-grid">
+
+                <input id="nameInput" type="text" placeholder="Enter brother/sister name..." />
+
+                <button id="addBtn">
+                    Add Person
+                </button>
+
+                <button id="resetBtn">
+                    Reset Today
+                </button>
+
+                <button id="nextDayBtn">
+                    Fast-Test Day +1
+                </button>
+
+            </div>
+
+            <div class="admin-note">
+
+                Development utilities only.
+                Remove this section in production if desired.
+
+            </div>
+
+        </section> -->
+
+    </main>
+
+    <script type="module" src="./app.js"></script>
+
+</body>
+
+</html>
